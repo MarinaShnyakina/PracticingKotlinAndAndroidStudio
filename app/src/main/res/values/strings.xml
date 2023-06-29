@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PracticingKotlinAndAndroidStudio</string>
+    <string name="dice_roller">DiceRoller</string>
     <string name="happy_birthday">Happy Birthday, Katy!</string>
     <string name="from">From Marina.</string>
+    <string name="button_roll">Roll</string>
 </resources>
