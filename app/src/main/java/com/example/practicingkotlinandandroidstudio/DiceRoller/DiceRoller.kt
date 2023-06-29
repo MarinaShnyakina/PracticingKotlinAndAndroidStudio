@@ -22,21 +22,38 @@ class DiceRoller : AppCompatActivity() {
 
 
     private fun rollDice1() {
-        val dice1 = Dice1(6)
-        val diceRoll = dice1.roll()
-        binding.textViewDice1.text = diceRoll.toString()
-
+        val dice = Dice1(6)
+        val diceRoll = dice.roll()
+        val drawableResource1 = when (diceRoll) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+        binding.imageViewDice1.setImageResource(drawableResource1)
+        binding.imageViewDice1.contentDescription = diceRoll.toString()
     }
 
     private fun rollDice2() {
-        val dice2 = Dice2(10)
-        val diceRoll = dice2.roll()
-        binding.textViewDice2.text = diceRoll.toString()
+        val dice = Dice2(6)
+        val diceRoll = dice.roll()
+        val drawableResource2 = when (diceRoll) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+        binding.imageViewDice2.setImageResource(drawableResource2)
+        binding.imageViewDice2.contentDescription = diceRoll.toString()
     }
 
-    class Dice1(private val numSides: Int) {
+    class Dice1(private val numSides1: Int) {
         fun roll(): Int {
-            return (1..numSides).random()
+            return (1..numSides1).random()
         }
     }
 

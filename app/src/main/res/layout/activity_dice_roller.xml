@@ -6,39 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".DiceRoller.DiceRoller">
 
-    <TextView
-        android:id="@+id/textViewDice1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="36sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="111" />
-
     <Button
         android:id="@+id/buttonRoll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="@string/button_roll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDice1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDice1" />
 
-    <TextView
-        android:id="@+id/textViewDice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text=""
-        tools:text="222"
-        android:textSize="36sp"
-        android:textStyle="normal"
+    <ImageView
+        android:id="@+id/imageViewDice1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRoll" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/imageViewDice2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDice1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDice1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRoll"
+        app:srcCompat="@drawable/dice_2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
