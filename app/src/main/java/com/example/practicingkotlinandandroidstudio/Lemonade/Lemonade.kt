@@ -28,7 +28,7 @@ class Lemonade : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLemonadeBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_lemonade)
+        setContentView(binding.root)
 
         // === DO NOT ALTER THE CODE IN THE FOLLOWING IF STATEMENT ===
 
@@ -40,13 +40,14 @@ class Lemonade : AppCompatActivity() {
 
         // === END IF STATEMENT ===
 
-        binding.imageLemonState!!.setOnClickListener {
-            // TODO: call the method that handles the state when the image is clicked
+        lemonImage = binding.imageLemonState
+        setViewElements()
+        lemonImage!!.setOnClickListener {
+            clickLemonImage()
         }
 
-        binding.imageLemonState!!.setOnClickListener {
-            // TODO: replace 'false' with a call to the function that shows the squeeze count
-            false
+        lemonImage!!.setOnLongClickListener {
+            showSnackbar()
         }
     }
 
@@ -58,8 +59,8 @@ class Lemonade : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putString(LEMONADE_STATE, lemonadeState)
-        outState.putString(LEMON_SIZE, lemonSize)
-        outState.putString(SQUEEZE_COUNT, squeezeCount)
+        outState.putString(LEMON_SIZE, lemonSize.toString())
+        outState.putString(SQUEEZE_COUNT, squeezeCount.toString())
         super.onSaveInstanceState(outState)
     }
 
@@ -69,26 +70,54 @@ class Lemonade : AppCompatActivity() {
      */
 
     private fun clickLemonImage() {
-        // TODO: use a conditional statement like 'if' or 'when' to track the lemonadeState
-        //  when the image is clicked we may need to change state to the next step in the
-        //  lemonade making progression (or at least make some changes to the current state in the
-        //  case of squeezing the lemon). That should be done in this conditional statement
+        when (lemonadeState) {
 
-        // TODO: When the image is clicked in the SELECT state, the state should become SQUEEZE
-        //  - The lemonSize variable needs to be set using the 'pick()' method in the LemonTree class
-        //  - The squeezeCount should be 0 since we haven't squeezed any lemons just yet.
+            SELECT -> {
+                lemonSize = lemonTree.pick()
+                squeezeCount = 0
+                lemonadeState = SQUEEZE
+            }
 
-        // TODO: When the image is clicked in the SQUEEZE state the squeezeCount needs to be
-        //  INCREASED by 1 and lemonSize needs to be DECREASED by 1.
-        //  - If the lemonSize has reached 0, it has been juiced and the state should become DRINK
-        //  - Additionally, lemonSize is no longer relevant and should be set to -1
+            SQUEEZE -> {
+                squeezeCount += 1
+                lemonSize = lemonSize -1
+                if (lemonSize == 0) {
+                    lemonadeState = DRINK
+                }
+                else {
+                    lemonadeState = SQUEEZE
+                }
+            }
 
-        // TODO: When the image is clicked in the DRINK state the state should become RESTART
+            DRINK -> {
+                lemonadeState = RESTART
+            }
 
-        // TODO: When the image is clicked in the RESTART state the state should become SELECT
+            RESTART -> lemonadeState = SELECT
+        }
 
-        // TODO: lastly, before the function terminates we need to set the view elements so that the
-        //  UI can reflect the correct state
+        setViewElements()
+
+        // TODO: используйте условный оператор типа "if" или "when", чтобы отслеживать состояние лимонада
+        //  при щелчке по изображению нам, возможно, потребуется изменить состояние для перехода к следующему шагу в
+        //  прогресс в производстве лимонада (или, по крайней мере, внесите некоторые изменения в текущее состояние в
+        //  случае выжимания лимона). Это должно быть сделано в этом условном операторе
+
+        // TODO: Когда изображение щелкается в SELECT состоянии, оно должно стать SQUEEZE
+        //  - Переменная lemonSize должна быть установлена с помощью метода 'pick()' в классе LemonTree
+        //  - squeezeCount должно быть равно 0, так как мы еще не выжали ни одного лимона.
+
+        // TODO: При нажатии на изображение в состоянии SQUEEZE squeeze Count должно быть равно
+        //  УВЕЛИЧЕНО на 1, а lemonSize необходимо уменьшить на 1.
+        //  -  Если размер лимона достиг 0, значит, из него выжали сок, и состояние должно стать DRINK
+        //  - Кроме того, lemonSize больше не имеет значения и должен быть установлен на -1
+
+        // TODO: При нажатии на изображение в состоянии DRINK состояние должно стать RESTART
+
+        // TODO: При нажатии на изображение в состоянии RESTART состояние должно стать SELECT
+
+        // TODO: наконец, перед завершением работы функции нам нужно настроить элементы представления таким образом, чтобы
+        // UI может отражать правильное состояние
     }
 
     /**
@@ -96,16 +125,41 @@ class Lemonade : AppCompatActivity() {
      */
 
     private fun setViewElements() {
-        binding.textAction
 
-        // TODO: set up a conditional that tracks the lemonadeState
+        binding.apply {
 
-        // TODO: for each state, the textAction TextView should be set to the corresponding string from
-        //  the string resources file. The strings are named to match the state
+            when (lemonadeState) {
 
-        // TODO: Additionally, for each state, the lemonImage should be set to the corresponding
-        //  drawable from the drawable resources. The drawables have the same names as the strings
-        //  but remember that they are drawables, not strings.
+                SELECT -> {
+                    textAction.text = getString(R.string.lemon_select)
+                    imageLemonState.setImageResource(R.drawable.lemon_tree)
+                }
+
+                SQUEEZE -> {
+                    textAction.text = getString(R.string.lemon_squeeze)
+                    imageLemonState.setImageResource(R.drawable.lemon_squeeze)
+                }
+
+                DRINK -> {
+                    textAction.text = getString(R.string.lemon_drink)
+                    imageLemonState.setImageResource(R.drawable.lemon_drink)
+                }
+
+                RESTART -> {
+                    textAction.text = getString(R.string.lemon_empty_glass)
+                    imageLemonState.setImageResource(R.drawable.lemon_restart)
+                }
+            }
+        }
+
+        // TODO: установите условие, которое отслеживает lemonadeState
+
+        // TODO: для каждого состояния textAction TextView должно быть установлено значение соответствующей строки из
+        //  файл string resources. Строки именуются в соответствии с состоянием
+
+        // TODO: Кроме того, для каждого состояния lemonImage должно быть установлено в соответствующее
+        //  drawable из drawable ресурсов. Объекты рисования имеют те же имена, что и строки
+        // но помните, что это рисуемые объекты, а не строки.
     }
 
     /**
