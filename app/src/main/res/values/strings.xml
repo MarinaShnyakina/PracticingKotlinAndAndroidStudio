@@ -8,4 +8,13 @@
     <string name="lemon_drink">Click to drink your lemonade!</string>
     <string name="lemon_empty_glass">Click to start again!</string>
     <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
+
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="service_question">How was the service?</string>
+    <string name="amazing_service">Amazing (20%)</string>
+    <string name="good_serice">Good (18%)</string>
+    <string name="ok_service">Okay (15%)</string>
+    <string name="round_up_tip">Round up tip?</string>
+    <string name="calculate">calculate</string>
+    <string name="tip_amount">Tip Amount</string>
 </resources>
