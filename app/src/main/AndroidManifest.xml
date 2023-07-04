@@ -19,7 +19,8 @@
             android:exported="false" />
         <activity
             android:name=".TipTime.TipTime"
-            android:exported="true">
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_tip_time">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
