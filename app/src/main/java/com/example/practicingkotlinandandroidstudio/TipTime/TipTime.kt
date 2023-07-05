@@ -1,7 +1,11 @@
 package com.example.practicingkotlinandandroidstudio.TipTime
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.databinding.ActivityTipTimeBinding
 import java.lang.Math.ceil
@@ -15,11 +19,17 @@ class TipTime : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonCalculate.setOnClickListener { calculateTip() }
+        binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ ->
+            handleKeyEvent(
+                view,
+                keyCode
+            )
+        }
     }
 
     private fun calculateTip() {
         binding.apply {
-            val stringInTextField = costOfService.text.toString()
+            val stringInTextField = costOfServiceEditText.text.toString()
             val cost = stringInTextField.toDoubleOrNull()
             if (cost == null) {
                 tipResult.text = ""
@@ -43,5 +53,15 @@ class TipTime : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+            return true
+        }
+        return false
     }
 }

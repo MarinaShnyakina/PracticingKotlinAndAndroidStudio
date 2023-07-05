@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher_lemonade"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lemonade"
+        android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
             android:name=".Lemonade.Lemonade"
@@ -20,6 +20,7 @@
         <activity
             android:name=".TipTime.TipTime"
             android:exported="true"
+            android:label="@string/tip_time"
             android:icon="@mipmap/ic_launcher_tip_time">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
