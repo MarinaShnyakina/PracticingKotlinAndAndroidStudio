@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
+
         <activity
             android:name=".Lemonade.Lemonade"
             android:exported="false" />
@@ -19,9 +20,12 @@
             android:exported="false" />
         <activity
             android:name=".TipTime.TipTime"
-            android:exported="true"
-            android:label="@string/tip_time"
-            android:icon="@mipmap/ic_launcher_tip_time">
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher_tip_time"
+            android:label="@string/tip_time"/>
+            <activity
+                android:name=".Affirmations.MainClassAffirmations"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
