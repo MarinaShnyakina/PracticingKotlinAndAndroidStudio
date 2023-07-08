@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="min_text_height">48dp</dimen>
+
+    <!--    Dimen for the app of Dogglers-->
+    <dimen name="button_width">250dp</dimen>
 </resources>

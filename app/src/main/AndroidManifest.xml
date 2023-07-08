@@ -22,10 +22,35 @@
             android:name=".TipTime.TipTime"
             android:exported="false"
             android:icon="@mipmap/ic_launcher_tip_time"
-            android:label="@string/tip_time"/>
-            <activity
-                android:name=".Affirmations.MainClassAffirmations"
-                android:exported="true" >
+            android:label="@string/tip_time" />
+        <activity
+            android:name=".Affirmations.MainClassAffirmations"
+            android:exported="false" />
+
+        <!--    An app for Dogglers-->
+        <activity android:name=".Dogglers.VerticalListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dogglers.MainClassDogglers" />
+        </activity>
+        <activity android:name=".Dogglers.HorizontalListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dogglers.MainClassDogglers" />
+        </activity>
+        <activity android:name=".Dogglers.GridListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dogglers.MainClassDogglers" />
+        </activity>
+        <activity
+            android:name=".Dogglers.MainClassDogglers"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_dogglers"
+            android:label="@string/app_dogglers"
+            android:roundIcon="@mipmap/ic_launcher_round_dogglers"
+            android:theme="@style/Theme.Design">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

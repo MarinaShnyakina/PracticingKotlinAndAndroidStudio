@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">PracticingKotlinAndAndroidStudio</string>
 
-<!--    First app, MainActivity-->
+    <!--    First app, MainActivity-->
     <string name="happy_birthday">Happy Birthday, Katy!</string>
     <string name="from">From Marina.</string>
 
-<!--    An app for making lemonade-->
+    <!--    An app for making lemonade-->
     <string name="lemon_select">Click to select a lemon!</string>
     <string name="lemon_squeeze">Click to juice the lemon!</string>
     <string name="lemon_drink">Click to drink your lemonade!</string>
     <string name="lemon_empty_glass">Click to start again!</string>
     <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
 
-<!--    App tip time-->
+    <!--    App tip time-->
     <string name="tip_time">Tip Time</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="service_question">How was the service?</string>
@@ -27,7 +27,7 @@
     <string name="secondary_color">Secondary color</string>
     <string name="email_icon">Email icon</string>
 
-<!--    An app for affirmations-->
+    <!--    An app for affirmations-->
     <string name="affirmation_1">I am strong.</string>
     <string name="affirmation_2">I believe in myself.</string>
     <string name="affirmation_3">Each day is a new opportunity to grow and be a better version of myself.</string>
@@ -38,4 +38,12 @@
     <string name="affirmation_8">I have the courage to follow my heart.</string>
     <string name="affirmation_9">Things will unfold at precisely the right time.</string>
     <string name="affirmation_10">I will be present in all the moments that this day brings.</string>
+
+    <!--    An app for Dogglers-->
+    <string name="dog_age">Age: %1$s</string>
+    <string name="dog_hobbies">Hobbies: %1$s</string>
+    <string name="vertical">Vertical</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="grid">Grid</string>
+    <string name="app_dogglers">Dogglers</string>
 </resources>
