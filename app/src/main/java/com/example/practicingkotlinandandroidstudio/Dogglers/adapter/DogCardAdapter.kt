@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.practicingkotlinandandroidstudio.Affirmations.adapter.ItemAdapter
 import com.example.practicingkotlinandandroidstudio.Dogglers.const.Layout
+import com.example.practicingkotlinandandroidstudio.Dogglers.data.DogDataSource
 import com.example.practicingkotlinandandroidstudio.Dogglers.model.Dog
 import com.example.practicingkotlinandandroidstudio.R
 
@@ -22,7 +22,7 @@ class DogCardAdapter(
     private val layout: Int,
 
     ) : RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
-    private val dogs: List<Dog> = listOf()
+    val datadogs: List<Dog> = DogDataSource.dogs
 
     /**
      * Initialize view elements
@@ -35,28 +35,22 @@ class DogCardAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
+        val adapterInflater = LayoutInflater.from(parent.context)
+            .inflate(R.layout.activity_dogglers_grid_list_item, parent, false)
 
-        if (layout == Layout.GRID) {
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.activity_dogglers_grid_list_item, parent, false)
-        } else {
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.activity_dogglers_vertical_horizontal_list_item, parent, false)
-        }
-
-        return DogCardViewHolder(parent.rootView)
+        return DogCardViewHolder(adapterInflater)
     }
 
-    override fun getItemCount(): Int = dogs.size
+    override fun getItemCount(): Int = datadogs.size
 
     override fun onBindViewHolder(holder: DogCardViewHolder, position: Int) {
-        val item = dogs[position]
+        val item = datadogs[position]
         holder.imageView.setImageResource(item.imageResourceId)
-        holder.nameTextView.text = context!!.resources.getString(item.name.toInt())
+        holder.nameTextView.text = item.name
 
         val resources = context?.resources
-        holder.ageTextView.text = resources?.getString(R.string.dog_age)
-        holder.hobbiesTextView.text = resources?.getString(R.string.dog_hobbies)
+        holder.ageTextView.text = resources?.getString(R.string.dog_age, item.age)
+        holder.hobbiesTextView.text = resources?.getString(R.string.dog_hobbies, item.hobbies)
     }
 }
 
