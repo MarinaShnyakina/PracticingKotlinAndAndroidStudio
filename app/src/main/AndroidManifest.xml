@@ -51,6 +51,10 @@
             android:roundIcon="@mipmap/ic_launcher_round_dogglers"
             android:theme="@style/Theme.Design"/>
 
+        <!--    An app for Dogglers-->
+        <activity
+            android:name=".Words.DetailActivity"
+            android:parentActivityName=".Words.MainClassWords" />
             <activity
                 android:name=".Words.MainClassWords"
                 android:exported="true"

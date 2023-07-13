@@ -9,13 +9,19 @@ import com.example.practicingkotlinandandroidstudio.databinding.ActivityWordsDet
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWordsDetailBinding
+
+    companion object {
+        const val LETTER = "letter"
+        const val SEARCH_PREFIX = "https://www.google.com/search?q="
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityWordsDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val letterId = "A"
+        val letterId = intent?.extras?.getString(LETTER).toString()
 
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
