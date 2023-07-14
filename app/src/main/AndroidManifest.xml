@@ -25,7 +25,13 @@
             android:label="@string/tip_time"/>
             <activity
                 android:name=".Affirmations.MainClassAffirmations"
-                android:exported="true" >
+                android:exported="false" />
+
+           <activity android:name=".DessertClicker.MainClassDessertClicker"
+               android:exported="true"
+               android:icon="@mipmap/ic_dessert_clicker"
+               android:label="@string/app_name_dessertClicker"
+               android:roundIcon="@mipmap/ic_dessert_clicker_round">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

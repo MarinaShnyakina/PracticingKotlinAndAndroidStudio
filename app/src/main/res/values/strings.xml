@@ -38,4 +38,11 @@
     <string name="affirmation_8">I have the courage to follow my heart.</string>
     <string name="affirmation_9">Things will unfold at precisely the right time.</string>
     <string name="affirmation_10">I will be present in all the moments that this day brings.</string>
+
+    <!--    An app for Dessert Clicker-->
+    <string name="app_name_dessertClicker">Dessert Clicker</string>
+    <string name="dessert_sold">Desserts Sold</string>
+    <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
 </resources>

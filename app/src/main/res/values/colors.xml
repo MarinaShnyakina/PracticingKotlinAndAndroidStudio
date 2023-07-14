@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--    Colors for the app of TipTime-->
-    <color name="green">#1B5E20</color>
+    <color name="greenTipTime">#1B5E20</color>
     <color name="green_dark">#003300</color>
     <color name="green_light">#A5D6A7</color>
     <color name="blue">#0288D1</color>
     <color name="blue_dark">#005B9F</color>
     <color name="blue_light">#81D4FA</color>
     <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="whiteTipTime">#FFFFFF</color>
 
     <!--    Colors for the app of Affirmation-->
     <color name="blue_200">#FF90CAF9</color>
     <color name="blue_500">#FF2196F3</color>
     <color name="blue_700">#FF1976D2</color>
+
+    <!--    Colors for the app of Dessert Clicker-->
+    <color name="color_primary">#008577</color>
+    <color name="color_primary_variant">#00574B</color>
+    <color name="color_secondary">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#6ab343</color>
+    <color name="grey">#99000000</color>
 </resources>
