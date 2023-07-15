@@ -21,4 +21,14 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+    <!--    Colors for the app of Words-->
+
+    <color name="teal_700_words">#0097A7</color>
+    <color name="teal_900">#006064</color>
+
+    <color name="blue_200_words">#62A3FF</color>
+    <color name="blue_700_words">#1675D1</color>
+    <color name="blue_900">#004A9F</color>
+
 </resources>
