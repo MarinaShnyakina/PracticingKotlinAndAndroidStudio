@@ -27,6 +27,7 @@ class WordListFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // извлечение буквы из аргументов фрагмента
         arguments?.let {
             letterId = it?.getString(LETTER).toString()
         }
