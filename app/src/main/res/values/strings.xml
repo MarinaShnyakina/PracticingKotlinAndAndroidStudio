@@ -53,6 +53,20 @@
     <string name="action_switch_layout">Switch Layout</string>
     <string name="look_up_word">Look up word in a Browser Search</string>
     <string name="look_up_words">Show Stored Words</string>
-
     <string name="word_list_fragment_label">Words That Start With {letter}</string>
+
+    <!--    An app for Unscramble-->
+    <string name="app_name_unscramble">Unscramble</string>
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="score">Score: %d</string>
+    <string name="word_count">%d of %d words</string>
+    <string name="enter_your_word">Enter your word</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_scored">"You scored: %d"</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="try_again">Try again!</string>
+
 </resources>

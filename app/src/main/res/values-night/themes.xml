@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Application theme for dark theme. -->
-    <style name="Theme.TipTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!--    <style name="Theme.TipTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+
+    <!--    Theme for the app Unscramble-->
+    <!-- Base application theme. -->
+    <style name="Theme.Unscramble" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <!--        <item name="colorPrimary">@color/green_light</item>-->
         <!--        <item name="colorPrimaryVariant">@color/green</item>-->
@@ -14,8 +18,14 @@
 
         <!--    Theme for the app Dogglers-->
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <!--        <item name="colorPrimary">@color/purple_200</item>-->
+        <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <!--        <item name="colorOnPrimary">@color/black</item>-->
+
+        <!--    Theme for the app Unscramble-->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/indigo_200</item>
+        <item name="colorPrimaryVariant">@color/indigo_800</item>
         <item name="colorOnPrimary">@color/black</item>
 
         <!-- Secondary brand color. -->
@@ -25,9 +35,17 @@
 
         <!--    Theme for the app Dogglers-->
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <!--        <item name="colorSecondary">@color/teal_200</item>-->
+        <!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
+        <!--        <item name="colorOnSecondary">@color/black</item>-->
+
+        <!--    Theme for the app Unscramble-->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_blue_200</item>
+        <item name="colorSecondaryVariant">@color/light_blue_200</item>
         <item name="colorOnSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/white</item>
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
@@ -39,4 +57,6 @@
         <!-- Switches-->
         <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
     </style>
+
+    <!--    Theme for the app Unscramble-->
 </resources>

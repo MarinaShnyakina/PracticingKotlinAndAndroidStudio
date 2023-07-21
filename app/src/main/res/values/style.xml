@@ -28,4 +28,13 @@
     <style name="Widget.Words.TextView" parent="Widget.MaterialComponents.TextView">
         <item name="android:textAppearance">?attr/textAppearanceHeadline4</item>
     </style>
+
+    <!--    Theme for the app Unscramble-->
+    <style name="Widget.Unscramble.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeErrorColor">@color/red_400</item>
+        <item name="errorIconTint">@color/red_400</item>
+        <item name="errorTextColor">@color/red_400</item>
+        <item name="errorIconDrawable">@drawable/ic_error_unscramble</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
 </resources>

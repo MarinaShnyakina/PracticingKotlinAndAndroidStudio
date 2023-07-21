@@ -4,4 +4,8 @@
 
     <!--    Dimen for the app of Dogglers-->
     <dimen name="button_width">250dp</dimen>
+
+    <!--    Dimens for the app of Unscramble-->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_margin">32dp</dimen>
 </resources>
