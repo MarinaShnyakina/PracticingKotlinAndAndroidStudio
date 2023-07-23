@@ -1,4 +1,4 @@
-package com.example.practicingkotlinandandroidstudio.Unscramble
+package com.example.practicingkotlinandandroidstudio.unscramble
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

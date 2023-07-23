@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Unscramble.MainActivity">
+    tools:context=".unscramble.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/game_fragment"
-        android:name="com.example.practicingkotlinandandroidstudio.Unscramble.UI.GameFragment"
+        android:name="com.example.practicingkotlinandandroidstudio.unscramble.ui.GameFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"

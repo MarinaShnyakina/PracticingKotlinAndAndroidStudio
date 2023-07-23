@@ -61,7 +61,7 @@
 
         <!--    An app for Unscramble-->
         <activity
-            android:name=".Unscramble.MainActivity"
+            android:name=".unscramble.MainActivity"
             android:exported="true"
             android:icon="@drawable/ic_launcher_unscramble_playstore"
             android:label="@string/app_name_unscramble"
