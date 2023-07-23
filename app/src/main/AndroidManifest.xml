@@ -9,7 +9,6 @@
         android:icon="@mipmap/ic_launcher_lemonade"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
 
         <activity
@@ -57,14 +56,16 @@
         <activity
             android:name=".Words.MainClassWords"
             android:exported="false"
-            android:label="@string/words" />
+            android:label="@string/words"
+            android:theme="@style/Widget.Words.TextView"/>
 
         <!--    An app for Unscramble-->
         <activity
             android:name=".Unscramble.MainActivity"
             android:exported="true"
             android:icon="@drawable/ic_launcher_unscramble_playstore"
-            android:label="@string/app_name_unscramble">
+            android:label="@string/app_name_unscramble"
+            android:theme="@style/Theme.Unscramble">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
