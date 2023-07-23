@@ -1,22 +1,39 @@
 package com.example.practicingkotlinandandroidstudio.unscramble.ui
 
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.TtsSpan
+import androidx.lifecycle.*
 
+/**
+ * ViewModel containing the app data and methods to process the data
+ */
 class GameViewModel : ViewModel() {
     private var _score = MutableLiveData(0)
     val score: LiveData<Int>
         get() = _score
 
-    private var _currentWordCount = MutableLiveData(0)
+    private val _currentWordCount = MutableLiveData(0)
     val currentWordCount: LiveData<Int>
         get() = _currentWordCount
 
-    private val _currentScrambleWord = MutableLiveData<String>()
-    val currentScrambleWold: LiveData<String>
-        get() = _currentScrambleWord
+    private val _currentScrambledWord = MutableLiveData<String>()
+    val currentScrambledWord: LiveData<Spannable> = _currentScrambledWord.map {
+        if (it == null) {
+            SpannableString("")
+        } else {
+            val scrambledWord = it.toString()
+            val spannable: Spannable = SpannableString(scrambledWord)
+            spannable.setSpan(
+                TtsSpan.VerbatimBuilder(scrambledWord).build(),
+                0,
+                scrambledWord.length,
+                Spannable.SPAN_INCLUSIVE_INCLUSIVE
+            )
+            spannable
+        }
+    }
+
 
     // List of words used in the game
     private var wordList: MutableList<String> = mutableListOf()
@@ -24,12 +41,6 @@ class GameViewModel : ViewModel() {
 
     init {
         getNextWord()
-        Log.d("GameFragment", "GameViewModel created!")
-    }
-
-    override fun onCleared() {
-        super.onCleared()
-        Log.d("GameFragment", "GameViewModel destroyed")
     }
 
     /*
@@ -46,8 +57,8 @@ class GameViewModel : ViewModel() {
         if (wordList.contains(currentWord)) {
             getNextWord()
         } else {
-            _currentScrambleWord.value = String(tempWord)
-            _currentWordCount.value = (_currentWordCount.value)?.inc()
+            _currentScrambledWord.value = String(tempWord)
+            _currentWordCount.value = _currentWordCount.value?.inc()
             wordList.add(currentWord)
         }
     }
@@ -67,7 +78,7 @@ class GameViewModel : ViewModel() {
     * Increases the game score if the player’s word is correct.
     */
     private fun increaseScore() {
-        _score.value = (_score.value)?.plus(SCORE_INCREASE)
+        _score.value = _score.value?.plus(SCORE_INCREASE)
     }
 
     /*
