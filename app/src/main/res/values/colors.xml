@@ -39,4 +39,11 @@
     <color name="red_700">#FFD32F2F</color>
     <color name="red_400">#FFEF5350</color>
 
+    <!--    Colors for the app Cupcake-->
+    <color name="pink_400">#FFEC407A</color>
+    <color name="pink_600">#FFD81B60</color>
+    <color name="pink_950">#FFB31650</color>
+    <color name="purple_400">#FFAB47BC</color>
+    <color name="purple_800">#FF7B1FA2</color>
+
 </resources>

@@ -65,7 +65,14 @@
             android:exported="true"
             android:icon="@drawable/ic_launcher_unscramble_playstore"
             android:label="@string/app_name_unscramble"
-            android:theme="@style/Theme.Unscramble">
+            android:theme="@style/Theme.Unscramble"/>
+
+            <!--    An app for Cupcake-->
+        <activity android:name=".cupcake.MainClassCupcake"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_cupcake_playstore"
+            android:label="@string/app_name_cupcake"
+            android:theme="@style/Theme.Cupcake" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
