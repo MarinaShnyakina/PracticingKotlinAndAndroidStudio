@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import com.example.practicingkotlinandandroidstudio.cupcake.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentSummaryCupcakeBinding
 
 /**
@@ -18,6 +20,8 @@ class SummaryFragment : Fragment() {
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
     private var binding: FragmentSummaryCupcakeBinding? = null
+
+    private val sharedViewModel: OrderViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +36,8 @@ class SummaryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            sendButton.setOnClickListener { sendOrder() }
+            viewModel = sharedViewModel
+            summaryFragment = this@SummaryFragment
         }
     }
 

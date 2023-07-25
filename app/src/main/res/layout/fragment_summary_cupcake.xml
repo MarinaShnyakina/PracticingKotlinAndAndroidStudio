@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".cupcake.SummaryFragment">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.practicingkotlinandandroidstudio.cupcake.model.OrderViewModel" />
+        <variable
+            name="summaryFragment"
+            type="com.example.practicingkotlinandandroidstudio.cupcake.SummaryFragment" />
+    </data>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -37,6 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/order_summary_margin"
+                    android:text="@{viewModel.quantity.toString()}"
                     tools:text="6 cupcakes" />
 
                 <View
@@ -60,6 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/order_summary_margin"
+                    android:text="@{viewModel.flavor}"
                     tools:text="Chocolate" />
 
                 <View
@@ -83,6 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/order_summary_margin"
+                    android:text="@{viewModel.date}"
                     tools:text="Sunday" />
 
                 <View
@@ -100,6 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginTop="@dimen/side_margin"
+                    android:text="@{@string/subtotal_price(viewModel.price)}"
                     tools:text="Total $5.00" />
 
             </LinearLayout>
@@ -109,7 +122,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/side_margin"
-                android:text="@string/send" />
+                android:text="@string/send"
+                android:onClick="@{() -> summaryFragment.sendOrder()}"/>
 
         </LinearLayout>
     </ScrollView>
