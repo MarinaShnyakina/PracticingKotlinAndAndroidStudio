@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/startFragment">
+
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.practicingkotlinandandroidstudio.cupcake.StartFragment"
@@ -21,6 +22,11 @@
         <action
             android:id="@+id/action_flavorFragment_to_pickupFragment"
             app:destination="@id/pickupFragment" />
+        <action
+            android:id="@+id/action_flavorFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/pickupFragment"
@@ -30,11 +36,22 @@
         <action
             android:id="@+id/action_pickupFragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_pickupFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.practicingkotlinandandroidstudio.cupcake.SummaryFragment"
         android:label="@string/order_summary"
-        tools:layout="@layout/fragment_summary_cupcake" />
+        tools:layout="@layout/fragment_summary_cupcake" >
+        <action
+            android:id="@+id/action_summaryFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:popUpTo="@id/startFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
 
