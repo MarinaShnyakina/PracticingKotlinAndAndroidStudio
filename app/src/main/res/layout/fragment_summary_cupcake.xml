@@ -105,6 +105,14 @@
                     android:layout_marginTop="@dimen/side_margin"
                     android:layout_marginBottom="@dimen/margin_between_elements" />
 
+                <EditText
+                    android:id="@+id/person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/order_summary_margin"
+                    android:inputType="textPersonName"
+                    android:hint="@string/your_name" />
+
                 <TextView
                     android:id="@+id/total"
                     style="@style/Widget.Cupcake.TextView.FinalPrice"

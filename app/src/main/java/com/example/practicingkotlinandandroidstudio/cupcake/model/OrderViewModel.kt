@@ -76,7 +76,7 @@ class OrderViewModel : ViewModel() {
     // Обновлет цену на основе сведений о заказе
     private fun updatePrice() {
         var calculatePrice = (quantity.value ?: 0) * PRICE_PER_CUPCAKE
-
+        // Если пользователь выбрал первый вариант (сегодня) для самовывоза, добавляется доп плата
         if (dateOptions[0] == _date.value) {
             calculatePrice += PRICE_FOR_SAME_DAY_PICKUP
         }

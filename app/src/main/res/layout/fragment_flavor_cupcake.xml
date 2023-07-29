@@ -32,7 +32,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/vanilla"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
                     android:onClick="@{() -> viewModel.setFlavor(@string/vanilla)}"
                     android:text="@string/vanilla" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/chocolate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                     android:onClick="@{() -> viewModel.setFlavor(@string/chocolate)}"
                     android:text="@string/chocolate" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/red_velvet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                     android:onClick="@{() -> viewModel.setFlavor(@string/red_velvet)}"
                     android:text="@string/red_velvet" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/salted_caramel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -64,13 +64,27 @@
                     android:onClick="@{() -> viewModel.setFlavor(@string/salted_caramel)}"
                     android:text="@string/salted_caramel" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/coffee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="@{viewModel.flavor.equals(@string/coffee)}"
                     android:onClick="@{() -> viewModel.setFlavor(@string/coffee)}"
                     android:text="@string/coffee" />
+                <CheckBox
+                    android:id="@+id/taste_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/taste_of_day)}"
+                    android:onClick="@{() -> viewModel.setFlavor(@string/taste_of_day)}"
+                    android:text="@string/taste_of_day" />
+                <CheckBox
+                    android:id="@+id/lavender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/lavender)}"
+                    android:onClick="@{() -> viewModel.setFlavor(@string/lavender)}"
+                    android:text="@string/lavender" />
             </RadioGroup>
 
             <View

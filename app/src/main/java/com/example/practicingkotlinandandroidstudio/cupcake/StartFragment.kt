@@ -38,7 +38,7 @@ class StartFragment : Fragment() {
     }
 
     /**
-     * Start an order with the desired quantity of cupcakes and navigate to the next screen.
+     * Сделать заказ с желаемым количеством кексов и перейдите к следующему экрану.
      */
     fun orderCupcake(quantity: Int) {
         // Обновление модели представления с указанием количества

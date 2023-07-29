@@ -12,7 +12,7 @@ import com.example.practicingkotlinandandroidstudio.cupcake.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentPickupCupcakeBinding
 
 /**
- * [PickupFragment] allows the user to choose a pickup date for the cupcake order.
+ * [PickupFragment] позволяет пользователю выбрать дату доставки заказа на кекс.
  */
 class PickupFragment : Fragment() {
 
@@ -42,7 +42,7 @@ class PickupFragment : Fragment() {
     }
 
     /**
-     * Navigate to the next screen to see the order summary.
+     * Перейти к следующему экрану, чтобы просмотреть сводку заказа.
      */
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_pickupFragment_to_summaryFragment)

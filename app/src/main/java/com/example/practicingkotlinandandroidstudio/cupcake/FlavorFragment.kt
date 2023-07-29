@@ -46,7 +46,7 @@ class FlavorFragment : Fragment() {
     }
 
     /**
-     * Navigate to the next screen to choose pickup date.
+     * Перейти к следующему экрану, чтобы выбрать дату получения.
      */
     fun goToNextScreen() {
         findNavController().navigate(R.id.action_flavorFragment_to_pickupFragment)
