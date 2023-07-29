@@ -59,6 +59,9 @@ dependencies {
     implementation (platform('org.jetbrains.kotlin:kotlin-bom:1.8.0'))
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:3.12.4'
+    // Test helpers for LiveData
+    androidTestImplementation 'androidx.arch.core:core-testing:2.2.0'
+
     androidTestImplementation 'org.mockito:mockito-android:3.12.4'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation "androidx.test:core-ktx:1.5.0"

@@ -33,7 +33,7 @@ class NavigationTests {
             ApplicationProvider.getApplicationContext()
         )
         letterListScenario = launchFragmentInContainer(
-            themeResId = R.style.Theme_TipTime)
+            themeResId = R.style.Theme_Unscramble)
         letterListScenario.onFragment { fragment ->
             navController.setGraph(R.navigation.nav_graph)
             Navigation.setViewNavController(fragment.requireView(), navController)
@@ -49,7 +49,7 @@ class NavigationTests {
 
             val letterListScenario = launchFragmentInContainer<LetterListFragment>(
                 themeResId =
-                R.style.Theme_TipTime
+                R.style.Theme_Unscramble
             )
 
             letterListScenario.onFragment { fragment ->

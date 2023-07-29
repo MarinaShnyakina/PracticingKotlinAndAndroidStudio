@@ -47,6 +47,7 @@ class OrderViewModel : ViewModel() {
 
     // Указать вкус кекса, можно выбрать только один вкус
     fun setFlavor(desiredFlavor: String) {
+
         _flavor.value = desiredFlavor
     }
 
