@@ -1,103 +1,118 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!-- Application theme for dark theme. -->
+<!--    <style name="Theme.TipTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+
+<!--    Theme for the app Unscramble-->
+<!-- Base application theme. -->
+<!--    <style name="Theme.Unscramble" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/green_light</item>-->
+<!--        <item name="colorPrimaryVariant">@color/green</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+
+<!--    Theme for the app Affirmation-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/blue_500</item>-->
+<!--        <item name="colorPrimaryVariant">@color/blue_700</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+
+<!--    Theme for the app Dogglers-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+
+<!--    Theme for the app Unscramble-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/indigo_200</item>-->
+<!--        <item name="colorPrimaryVariant">@color/indigo_800</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+
+<!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/blue_light</item>-->
+<!--        <item name="colorSecondaryVariant">@color/blue_light</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+
+<!--    Theme for the app Dogglers-->
+<!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+
+<!--    Theme for the app Unscramble-->
+<!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/light_blue_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/light_blue_200</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!-- Customize your theme here. -->
+<!--        <item name="android:textColor">@color/white</item>-->
+
+<!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!-- Text input fields -->
+<!--        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox-->
+<!--        </item>-->
+<!-- Radio buttons-->
+<!--        <item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>-->
+<!-- Switches-->
+<!--        <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>-->
+<!--    </style>-->
+
+<!--    Theme for the app Cupcake-->
+<!-- Base application theme. -->
+<!--    <style name="Theme.Cupcake" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/pink_400</item>-->
+<!--        <item name="colorPrimaryVariant">@color/pink_950</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+<!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/purple_400</item>-->
+<!--        <item name="colorSecondaryVariant">@color/purple_400</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!-- Radio buttons. -->
+<!--        <item name="radioButtonStyle">@style/Widget.Cupcake.CompoundButton.RadioButton</item>-->
+<!-- Text appearance style. -->
+<!--        <item name="textAppearanceSubtitle1">@style/TextAppearance.Cupcake.Subtitle1</item>-->
+<!--    </style>-->
+
+<!--    Theme for the app Sports-->
+<!-- Base application theme. -->
+<!--    <style name="Theme.Sports" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!-- Primary brand color. -->
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+<!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!-- Customize your theme here. -->
+<!--    </style>-->
+
+<!--    <style name="SportsDetailText" parent="TextAppearance.AppCompat.Subhead" />-->
+
+<!--    <style name="SportsTitle" parent="TextAppearance.AppCompat.Headline" />-->
+
+<!--</resources>-->
+
+<!--    Theme for the app Lunch-->
+
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Application theme for dark theme. -->
-    <!--    <style name="Theme.TipTime" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
-
-    <!--    Theme for the app Unscramble-->
     <!-- Base application theme. -->
-    <style name="Theme.Unscramble" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.LunchTray" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <!--        <item name="colorPrimary">@color/green_light</item>-->
-        <!--        <item name="colorPrimaryVariant">@color/green</item>-->
-        <!--        <item name="colorOnPrimary">@color/black</item>-->
-
-        <!--    Theme for the app Affirmation-->
-        <!-- Primary brand color. -->
-        <!--        <item name="colorPrimary">@color/blue_500</item>-->
-        <!--        <item name="colorPrimaryVariant">@color/blue_700</item>-->
-        <!--        <item name="colorOnPrimary">@color/black</item>-->
-
-        <!--    Theme for the app Dogglers-->
-        <!-- Primary brand color. -->
-        <!--        <item name="colorPrimary">@color/purple_200</item>-->
-        <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
-        <!--        <item name="colorOnPrimary">@color/black</item>-->
-
-        <!--    Theme for the app Unscramble-->
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/indigo_200</item>
-        <item name="colorPrimaryVariant">@color/indigo_800</item>
+        <item name="colorPrimary">@color/purple_200_lunch</item>
+        <item name="colorPrimaryVariant">@color/purple_700_lunch</item>
         <item name="colorOnPrimary">@color/black</item>
-
-        <!-- Secondary brand color. -->
-        <!--        <item name="colorSecondary">@color/blue_light</item>-->
-        <!--        <item name="colorSecondaryVariant">@color/blue_light</item>-->
-        <!--        <item name="colorOnSecondary">@color/black</item>-->
-
-        <!--    Theme for the app Dogglers-->
-        <!-- Secondary brand color. -->
-        <!--        <item name="colorSecondary">@color/teal_200</item>-->
-        <!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
-        <!--        <item name="colorOnSecondary">@color/black</item>-->
-
-        <!--    Theme for the app Unscramble-->
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/light_blue_200</item>
-        <item name="colorSecondaryVariant">@color/light_blue_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
-        <item name="android:textColor">@color/white</item>
-
-        <!-- Status bar color. -->
-        <!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
-        <!-- Text input fields -->
-        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox
-        </item>
-        <!-- Radio buttons-->
-        <item name="radioButtonStyle">@style/Widget.TipTime.CompoundButton.RadioButton</item>
-        <!-- Switches-->
-        <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
-    </style>
-
-    <!--    Theme for the app Cupcake-->
-    <!-- Base application theme. -->
-    <style name="Theme.Cupcake" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/pink_400</item>
-        <item name="colorPrimaryVariant">@color/pink_950</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/purple_400</item>
-        <item name="colorSecondaryVariant">@color/purple_400</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Radio buttons. -->
-        <item name="radioButtonStyle">@style/Widget.Cupcake.CompoundButton.RadioButton</item>
-        <!-- Text appearance style. -->
-        <item name="textAppearanceSubtitle1">@style/TextAppearance.Cupcake.Subtitle1</item>
-    </style>
-
-    <!--    Theme for the app Sports-->
-    <!-- Base application theme. -->
-    <style name="Theme.Sports" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
-    <style name="SportsDetailText" parent="TextAppearance.AppCompat.Subhead" />
-
-    <style name="SportsTitle" parent="TextAppearance.AppCompat.Headline" />
-
-
 </resources>

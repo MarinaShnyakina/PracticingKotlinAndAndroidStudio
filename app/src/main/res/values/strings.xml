@@ -59,7 +59,7 @@
     <string name="app_name_unscramble">Unscramble</string>
     <string name="instructions">Unscramble the word using all the letters.</string>
     <string name="skip">Skip</string>
-    <string name="submit">Submit</string>
+    <string name="submit">Submit Order</string>
     <string name="score">Score: %d</string>
     <string name="word_count">%d of %d words</string>
     <string name="enter_your_word">Enter your word</string>
@@ -141,5 +141,20 @@
     <string name="swimming_subtitle">Here is some Swimming news!</string>
     <string name="table_tennis_subtitle">Here is some Table Tennis news!</string>
     <string name="tennis_subtitle">Here is some Tennis news!</string>
+
+
+    <!--    An app for Lunch-->
+    <string name="app_name_lunch">Lunch Tray</string>
+    <string name="tile_start_order">Order</string>
+    <string name="title_coupons">Coupons</string>
+    <string name="title_entree_menu">Entrees</string>
+    <string name="title_side_menu">Sides</string>
+    <string name="title_accompaniment_menu">Accompaniments</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="start_order">Start Order</string>
+    <string name="subtotal">Subtotal: %s</string>
+    <string name="tax">Tax: %s</string>
+    <string name="total">Total: %s</string>
+    <string name="submit_order">Order Submitted!</string>
 
 </resources>

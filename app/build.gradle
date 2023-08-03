@@ -33,13 +33,11 @@ android {
         jvmTarget = '1.8'
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding true
-    }
-
-    buildFeatures{
         dataBinding true
     }
+
 }
 
 dependencies {
@@ -48,15 +46,23 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation "androidx.navigation:navigation-fragment-ktx:2.6.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.6.0"
 
     //Live Data and View Model
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
 
     // SlidingPaneLayout
     implementation 'androidx.slidingpanelayout:slidingpanelayout:1.2.0'
+
+    implementation 'androidx.leanback:leanback:1.0.0'
+
+    // Coil
+    implementation "io.coil-kt:coil:1.1.1"
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation (platform('org.jetbrains.kotlin:kotlin-bom:1.8.0'))
@@ -64,11 +70,6 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:3.12.4'
     // Test helpers for LiveData
     androidTestImplementation 'androidx.arch.core:core-testing:2.2.0'
-
-    implementation 'androidx.leanback:leanback:1.0.0'
-    implementation "androidx.slidingpanelayout:slidingpanelayout:1.2.0"
-    // Coil
-    implementation "io.coil-kt:coil:1.1.1"
 
     androidTestImplementation 'org.mockito:mockito-android:3.12.4'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

@@ -72,22 +72,29 @@
             android:name=".unscramble.MainActivity"
             android:exported="false"
             android:icon="@drawable/ic_launcher_unscramble_playstore"
-            android:label="@string/app_name_unscramble"
-            android:theme="@style/Theme.Unscramble"/>
+            android:label="@string/app_name_unscramble" />
+<!--            android:theme="@style/Theme.Unscramble"/>-->
 
         <!--    An app for Cupcake-->
         <activity android:name=".cupcake.MainClassCupcake"
             android:exported="false"
             android:icon="@drawable/ic_launcher_cupcake_playstore"
-            android:label="@string/app_name_cupcake"
-            android:theme="@style/Theme.Cupcake" />
+            android:label="@string/app_name_cupcake" />
+<!--            android:theme="@style/Theme.Cupcake" />-->
 
         <!--    An app for Sports-->
         <activity android:name=".sports.MainClassSports"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_lemonade"
-            android:label="@string/app_name_sports"
-            android:theme="@style/Theme.Sports" >
+            android:label="@string/app_name_sports" />
+<!--            android:theme="@style/Theme.Sports" />-->
+
+        <!--    An app for Lunch-->
+        <activity android:name=".lunchTray.MainClassLunchTray"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_lunch_playstore"
+            android:label="@string/app_name_lunch"
+            android:theme="@style/Theme.LunchTray" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
