@@ -46,4 +46,10 @@
     <color name="purple_400">#FFAB47BC</color>
     <color name="purple_800">#FF7B1FA2</color>
 
+    <!--    Colors for the app Sports-->
+    <color name="purple_200_sports">#FFBB86FC</color>
+    <color name="purple_500_sports">#FF6200EE</color>
+    <color name="purple_700_sports">#FF3700B3</color>
+    <color name="teal_200_sports">#FF03DAC5</color>
+    <color name="teal_700_sports">#FF018786</color>
 </resources>
