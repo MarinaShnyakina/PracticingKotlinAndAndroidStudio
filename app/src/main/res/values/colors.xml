@@ -57,4 +57,11 @@
     <color name="purple_200_lunch">#FFBB86FC</color>
     <color name="purple_500_lunch">#FF6200EE</color>
     <color name="purple_700_lunch">#FF3700B3</color>
+
+    <!--    Colors for the app Mars-->
+    <color name="purple_200_mars">#FFBB86FC</color>
+    <color name="purple_500_mars">#FF6200EE</color>
+    <color name="purple_700_mars">#FF3700B3</color>
+    <color name="teal_200_mars">#FF03DAC5</color>
+    <color name="teal_700_mars">#FF018786</color>
 </resources>

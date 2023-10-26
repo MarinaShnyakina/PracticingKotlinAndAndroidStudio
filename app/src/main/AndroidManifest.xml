@@ -93,8 +93,15 @@
         <activity android:name=".lunchTray.MainClassLunchTray"
             android:exported="true"
             android:icon="@drawable/ic_launcher_lunch_playstore"
-            android:label="@string/app_name_lunch"
-            android:theme="@style/Theme.LunchTray" >
+            android:label="@string/app_name_lunch" />
+<!--            android:theme="@style/Theme.LunchTray" >-->
+
+        <!--    An app for Mars-->
+        <activity android:name=".marsphotos.overview.MainActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_mars_playstore"
+            android:label="@string/app_name_mars"
+            android:theme="@style/Theme.MarsPhotos" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

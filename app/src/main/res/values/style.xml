@@ -86,7 +86,7 @@
     <!-- Text Appearance Subtitle1 style -->
     <style name="TextAppearance.LunchTray.Subtitle1"
         parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">19sp</item>
     </style>
 
     <!-- TextView style -->
@@ -129,6 +129,7 @@
     <item name="singleLine">false</item>
     <item name="android:scrollHorizontally">false</item>
     <item name="maxLines">5</item>
+    </style>
 
     <!-- TextView Style for Checkout Item Label -->
     <style name="Widget.LunchTray.TextView.CheckoutItem.Label"
@@ -160,12 +161,12 @@
     </style>
 
     <!-- Divider style -->
-    <style name="Widget.LunchTray.Divider" parent="@style/Theme.LunchTray">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:background">?attr/dividerHorizontal</item>
-        <item name="android:layout_marginTop">@dimen/base_margin</item>
-    </style>
+<!--    <style name="Widget.LunchTray.Divider" parent="@style/Theme.LunchTray">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">1dp</item>-->
+<!--        <item name="android:background">?attr/dividerHorizontal</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/base_margin</item>-->
+<!--    </style>-->
 
     <string name="cancel">Cancel</string>
 </resources>
