@@ -1,159 +1,159 @@
 <resources>
-<!--    <string name="app_name">PracticingKotlinAndAndroidStudio</string>-->
+    <string name="app_name">PracticingKotlinAndAndroidStudio</string>
 
-<!--    &lt;!&ndash;    First app, MainActivity&ndash;&gt;-->
-<!--    <string name="happy_birthday">Happy Birthday, Katy!</string>-->
-<!--    <string name="from">From Marina.</string>-->
+    <!--    First app, MainActivity-->
+    <string name="happy_birthday">Happy Birthday, Katy!</string>
+    <string name="from">From Marina.</string>
 
-<!--    &lt;!&ndash;    An app for making lemonade&ndash;&gt;-->
-<!--    <string name="lemon_select">Click to select a lemon!</string>-->
-<!--    <string name="lemon_squeeze">Click to juice the lemon!</string>-->
-<!--    <string name="lemon_drink">Click to drink your lemonade!</string>-->
-<!--    <string name="lemon_empty_glass">Click to start again!</string>-->
-<!--    <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>-->
+    <!--    An app for making lemonade-->
+    <string name="lemon_select">Click to select a lemon!</string>
+    <string name="lemon_squeeze">Click to juice the lemon!</string>
+    <string name="lemon_drink">Click to drink your lemonade!</string>
+    <string name="lemon_empty_glass">Click to start again!</string>
+    <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
 
-<!--    &lt;!&ndash;    App tip time&ndash;&gt;-->
-<!--    <string name="tip_time">Tip Time</string>-->
-<!--    <string name="cost_of_service">Cost of Service</string>-->
-<!--    <string name="service_question">How was the service?</string>-->
-<!--    <string name="amazing_service">Amazing (20%)</string>-->
-<!--    <string name="good_service">Good (18%)</string>-->
-<!--    <string name="ok_service">Okay (15%)</string>-->
-<!--    <string name="round_up_tip">Round up tip?</string>-->
-<!--    <string name="calculate">calculate</string>-->
-<!--    <string name="tip_amount">Tip Amount: %s</string>-->
-<!--    <string name="primary_color">Primary color</string>-->
-<!--    <string name="button">Button</string>-->
-<!--    <string name="secondary_color">Secondary color</string>-->
-<!--    <string name="email_icon">Email icon</string>-->
+    <!--    App tip time-->
+    <string name="tip_time">Tip Time</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="service_question">How was the service?</string>
+    <string name="amazing_service">Amazing (20%)</string>
+    <string name="good_service">Good (18%)</string>
+    <string name="ok_service">Okay (15%)</string>
+    <string name="round_up_tip">Round up tip?</string>
+    <string name="calculate">calculate</string>
+    <string name="tip_amount">Tip Amount: %s</string>
+    <string name="primary_color">Primary color</string>
+    <string name="button">Button</string>
+    <string name="secondary_color">Secondary color</string>
+    <string name="email_icon">Email icon</string>
 
-<!--    &lt;!&ndash;    An app for affirmations&ndash;&gt;-->
-<!--    <string name="affirmation_1">I am strong.</string>-->
-<!--    <string name="affirmation_2">I believe in myself.</string>-->
-<!--    <string name="affirmation_3">Each day is a new opportunity to grow and be a better version of myself.</string>-->
-<!--    <string name="affirmation_4">Every challenge in my life is an opportunity to learn from.</string>-->
-<!--    <string name="affirmation_5">I have so much to be grateful for.</string>-->
-<!--    <string name="affirmation_6">Good things are always coming into my life.</string>-->
-<!--    <string name="affirmation_7">New opportunities await me at every turn.</string>-->
-<!--    <string name="affirmation_8">I have the courage to follow my heart.</string>-->
-<!--    <string name="affirmation_9">Things will unfold at precisely the right time.</string>-->
-<!--    <string name="affirmation_10">I will be present in all the moments that this day brings.</string>-->
+    <!--    An app for affirmations-->
+    <string name="affirmation_1">I am strong.</string>
+    <string name="affirmation_2">I believe in myself.</string>
+    <string name="affirmation_3">Each day is a new opportunity to grow and be a better version of myself.</string>
+    <string name="affirmation_4">Every challenge in my life is an opportunity to learn from.</string>
+    <string name="affirmation_5">I have so much to be grateful for.</string>
+    <string name="affirmation_6">Good things are always coming into my life.</string>
+    <string name="affirmation_7">New opportunities await me at every turn.</string>
+    <string name="affirmation_8">I have the courage to follow my heart.</string>
+    <string name="affirmation_9">Things will unfold at precisely the right time.</string>
+    <string name="affirmation_10">I will be present in all the moments that this day brings.</string>
 
-<!--    &lt;!&ndash;    An app for Dogglers&ndash;&gt;-->
-<!--    <string name="dog_age">Age: %1$s</string>-->
-<!--    <string name="dog_hobbies">Hobbies: %1$s</string>-->
-<!--    <string name="vertical">Vertical</string>-->
-<!--    <string name="horizontal">Horizontal</string>-->
-<!--    <string name="grid">Grid</string>-->
-<!--    <string name="app_dogglers">Dogglers</string>-->
+    <!--    An app for Dogglers-->
+    <string name="dog_age">Age: %1$s</string>
+    <string name="dog_hobbies">Hobbies: %1$s</string>
+    <string name="vertical">Vertical</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="grid">Grid</string>
+    <string name="app_dogglers">Dogglers</string>
 
-<!--    &lt;!&ndash;    An app for Words&ndash;&gt;-->
-<!--    <string name="words">Words</string>-->
-<!--    <string name="detail_prefix">Words That Start With</string>-->
-<!--    <string name="action_switch_layout">Switch Layout</string>-->
-<!--    <string name="look_up_word">Look up word in a Browser Search</string>-->
-<!--    <string name="look_up_words">Show Stored Words</string>-->
-<!--    <string name="word_list_fragment_label">Words That Start With {letter}</string>-->
+    <!--    An app for Words-->
+    <string name="words">Words</string>
+    <string name="detail_prefix">Words That Start With</string>
+    <string name="action_switch_layout">Switch Layout</string>
+    <string name="look_up_word">Look up word in a Browser Search</string>
+    <string name="look_up_words">Show Stored Words</string>
+    <string name="word_list_fragment_label">Words That Start With {letter}</string>
 
-<!--    &lt;!&ndash;    An app for Unscramble&ndash;&gt;-->
-<!--    <string name="app_name_unscramble">Unscramble</string>-->
-<!--    <string name="instructions">Unscramble the word using all the letters.</string>-->
-<!--    <string name="skip">Skip</string>-->
-<!--    <string name="submit">Submit Order</string>-->
-<!--    <string name="score">Score: %d</string>-->
-<!--    <string name="word_count">%d of %d words</string>-->
-<!--    <string name="enter_your_word">Enter your word</string>-->
-<!--    <string name="congratulations">Congratulations!</string>-->
-<!--    <string name="you_scored">"You scored: %d"</string>-->
-<!--    <string name="exit">Exit</string>-->
-<!--    <string name="play_again">Play Again</string>-->
-<!--    <string name="try_again">Try again!</string>-->
+    <!--    An app for Unscramble-->
+    <string name="app_name_unscramble">Unscramble</string>
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit Order</string>
+    <string name="score">Score: %d</string>
+    <string name="word_count">%d of %d words</string>
+    <string name="enter_your_word">Enter your word</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_scored">"You scored: %d"</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+    <string name="try_again">Try again!</string>
 
-<!--    &lt;!&ndash;    An app for Cupcake&ndash;&gt;-->
-<!--    <string name="app_name_cupcake">Cupcake</string>-->
-<!--&lt;!&ndash;    <string name="order_cupcakes">Order Cupcakes</string>&ndash;&gt;-->
-<!--    <string name="one_cupcake">One Cupcake</string>-->
-<!--    <string name="six_cupcakes">Six Cupcakes</string>-->
-<!--    <string name="twelve_cupcakes">Twelve Cupcakes</string>-->
-<!--    <string name="choose_flavor">Choose Flavor</string>-->
-<!--    <string name="vanilla">Vanilla</string>-->
-<!--    <string name="chocolate">Chocolate</string>-->
-<!--    <string name="red_velvet">Red Velvet</string>-->
-<!--    <string name="salted_caramel">Salted Caramel</string>-->
-<!--    <string name="coffee">Coffee</string>-->
-<!--    <string name="taste_of_day">Taste of the day</string>-->
-<!--    <string name="lavender">Lavender</string>-->
-<!--    <string name="special_flavor">Special Flavor</string>-->
-<!--    <string name="cancel">Cancel</string>-->
-<!--    <string name="next">Next</string>-->
-<!--    <string name="choose_pickup_date">Choose Pickup Date</string>-->
-<!--    <string name="order_summary">Order Summary</string>-->
-<!--    <string name="send">Send Order to Another App</string>-->
-<!--    <string name="quantity">Quantity</string>-->
-<!--    <string name="flavor">Flavor</string>-->
-<!--    <string name="pickup_date">Pickup date</string>-->
-<!--    <string name="subtotal_price">Subtotal %s</string>-->
-<!--    <string name="total_price">Total %s</string>-->
-<!--    <string name="new_cupcake_order">New Cupcake Order</string>-->
-<!--    <string name="order_details">Quantity: %1$s \n Flavor: %2$s \nPickup date: %3$s \n-->
-<!--        Total: %4$s \n\n Thank you!</string>-->
-<!--    <string name="your_name">Your name</string>-->
-<!--    <plurals name="cupcakes">-->
-<!--        <item quantity="one">%d cupcake</item>-->
-<!--        <item quantity="other">%d cupcakes</item>-->
-<!--    </plurals>-->
+    <!--    An app for Cupcake-->
+    <string name="app_name_cupcake">Cupcake</string>
+<!--    <string name="order_cupcakes">Order Cupcakes</string>-->
+    <string name="one_cupcake">One Cupcake</string>
+    <string name="six_cupcakes">Six Cupcakes</string>
+    <string name="twelve_cupcakes">Twelve Cupcakes</string>
+    <string name="choose_flavor">Choose Flavor</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="red_velvet">Red Velvet</string>
+    <string name="salted_caramel">Salted Caramel</string>
+    <string name="coffee">Coffee</string>
+    <string name="taste_of_day">Taste of the day</string>
+    <string name="lavender">Lavender</string>
+    <string name="special_flavor">Special Flavor</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="choose_pickup_date">Choose Pickup Date</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="send">Send Order to Another App</string>
+    <string name="quantity">Quantity</string>
+    <string name="flavor">Flavor</string>
+    <string name="pickup_date">Pickup date</string>
+    <string name="subtotal_price">Subtotal %s</string>
+    <string name="total_price">Total %s</string>
+    <string name="new_cupcake_order">New Cupcake Order</string>
+    <string name="order_details">Quantity: %1$s \n Flavor: %2$s \nPickup date: %3$s \n
+        Total: %4$s \n\n Thank you!</string>
+    <string name="your_name">Your name</string>
+    <plurals name="cupcakes">
+        <item quantity="one">%d cupcake</item>
+        <item quantity="other">%d cupcakes</item>
+    </plurals>
 
-<!--    &lt;!&ndash;    An app for Sports&ndash;&gt;-->
-<!--    <string name="app_name_sports">Sports</string>-->
-<!--    &lt;!&ndash; Strings used for fragments for navigation &ndash;&gt;-->
-<!--    <string name="list_fragment_label">Sports</string>-->
-<!--    <string name="news_fragment_label">Sports News</string>-->
+    <!--    An app for Sports-->
+    <string name="app_name_sports">Sports</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="list_fragment_label">Sports</string>
+    <string name="news_fragment_label">Sports News</string>
 
-<!--    <string name="title_placeholder">Title</string>-->
-<!--    <string name="news_title">News</string>-->
-<!--    <string name="sports_info_placeholder">Here is some news</string>-->
-<!--    <string name="sports_news_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse-->
-<!--        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor-->
-<!--        diam fringilla tellus, eu euismod mauris neque at neque.</string>-->
-<!--    />-->
+    <string name="title_placeholder">Title</string>
+    <string name="news_title">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+    <string name="sports_news_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
+        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
+        diam fringilla tellus, eu euismod mauris neque at neque.</string>
+    />
 
-<!--    <string name="baseball">Baseball</string>-->
-<!--    <string name="badminton">Badminton</string>-->
-<!--    <string name="basketball">Basketball</string>-->
-<!--    <string name="bowling">Bowling</string>-->
-<!--    <string name="cycling">Cycling</string>-->
-<!--    <string name="golf">Golf</string>-->
-<!--    <string name="running">Running</string>-->
-<!--    <string name="soccer">Soccer</string>-->
-<!--    <string name="swimming">Swimming</string>-->
-<!--    <string name="table_tennis">Table Tennis</string>-->
-<!--    <string name="tennis">Tennis</string>-->
+    <string name="baseball">Baseball</string>
+    <string name="badminton">Badminton</string>
+    <string name="basketball">Basketball</string>
+    <string name="bowling">Bowling</string>
+    <string name="cycling">Cycling</string>
+    <string name="golf">Golf</string>
+    <string name="running">Running</string>
+    <string name="soccer">Soccer</string>
+    <string name="swimming">Swimming</string>
+    <string name="table_tennis">Table Tennis</string>
+    <string name="tennis">Tennis</string>
 
-<!--    <string name="baseball_subtitle">Here is some Baseball news!</string>-->
-<!--    <string name="badminton_subtitle">Here is some Badminton news!</string>-->
-<!--    <string name="basketball_subtitle">Here is some Basketball news!</string>-->
-<!--    <string name="bowling_subtitle">Here is some Bowling news!</string>-->
-<!--    <string name="cycling_subtitle">Here is some Cycling news!</string>-->
-<!--    <string name="golf_subtitle">Here is some Golf news!</string>-->
-<!--    <string name="running_subtitle">Here is some Running news!</string>-->
-<!--    <string name="soccer_subtitle">Here is some Soccer news!</string>-->
-<!--    <string name="swimming_subtitle">Here is some Swimming news!</string>-->
-<!--    <string name="table_tennis_subtitle">Here is some Table Tennis news!</string>-->
-<!--    <string name="tennis_subtitle">Here is some Tennis news!</string>-->
+    <string name="baseball_subtitle">Here is some Baseball news!</string>
+    <string name="badminton_subtitle">Here is some Badminton news!</string>
+    <string name="basketball_subtitle">Here is some Basketball news!</string>
+    <string name="bowling_subtitle">Here is some Bowling news!</string>
+    <string name="cycling_subtitle">Here is some Cycling news!</string>
+    <string name="golf_subtitle">Here is some Golf news!</string>
+    <string name="running_subtitle">Here is some Running news!</string>
+    <string name="soccer_subtitle">Here is some Soccer news!</string>
+    <string name="swimming_subtitle">Here is some Swimming news!</string>
+    <string name="table_tennis_subtitle">Here is some Table Tennis news!</string>
+    <string name="tennis_subtitle">Here is some Tennis news!</string>
 
 
-<!--    &lt;!&ndash;    An app for Lunch&ndash;&gt;-->
-<!--    <string name="app_name_lunch">Lunch Tray</string>-->
-<!--    <string name="tile_start_order">Order</string>-->
-<!--    <string name="title_coupons">Coupons</string>-->
-<!--    <string name="title_entree_menu">Entrees</string>-->
-<!--    <string name="title_side_menu">Sides</string>-->
-<!--    <string name="title_accompaniment_menu">Accompaniments</string>-->
-<!--    <string name="title_checkout">Checkout</string>-->
-<!--    <string name="start_order">Start Order</string>-->
-<!--    <string name="tax">Tax: %s</string>-->
-<!--    <string name="submit_order">Order Submitted!</string>-->
+    <!--    An app for Lunch-->
+    <string name="app_name_lunch">Lunch Tray</string>
+    <string name="tile_start_order">Order</string>
+    <string name="title_coupons">Coupons</string>
+    <string name="title_entree_menu">Entrees</string>
+    <string name="title_side_menu">Sides</string>
+    <string name="title_accompaniment_menu">Accompaniments</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="start_order">Start Order</string>
+    <string name="tax">Tax: %s</string>
+    <string name="submit_order">Order Submitted!</string>
 
     <!--    An app for Mars-->
     <string name="app_name_mars">Mars Photos</string>

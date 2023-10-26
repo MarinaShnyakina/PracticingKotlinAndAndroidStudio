@@ -65,6 +65,12 @@ dependencies {
     // Coil
     implementation "io.coil-kt:coil:1.1.1"
 
+    // Moshi
+    implementation 'com.squareup.moshi:moshi-kotlin:1.13.0'
+
+    // Retrofit with Moshi Converter
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation (platform('org.jetbrains.kotlin:kotlin-bom:1.8.0'))
     testImplementation 'junit:junit:4.13.2'
