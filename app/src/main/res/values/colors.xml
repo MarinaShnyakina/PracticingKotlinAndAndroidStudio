@@ -64,4 +64,9 @@
     <color name="purple_700_mars">#FF3700B3</color>
     <color name="teal_200_mars">#FF03DAC5</color>
     <color name="teal_700_mars">#FF018786</color>
+
+    <!--    Colors for the app Amphibians-->
+    <color name="green_light_amphibians">#80e27e</color>
+    <color name="green_500_amphibians">#4caf50</color>
+    <color name="green_dark_amphibians">#087f23</color>
 </resources>

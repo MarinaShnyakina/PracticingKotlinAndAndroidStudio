@@ -102,8 +102,16 @@
         <activity android:name=".marsphotos.overview.MainActivity"
             android:exported="true"
             android:icon="@drawable/ic_launcher_mars_playstore"
-            android:label="@string/app_name_mars"
-            android:theme="@style/Theme.MarsPhotos" >
+            android:label="@string/app_name_mars" />
+<!--            android:theme="@style/Theme.MarsPhotos" />-->
+
+            <!--    An app for Amphibians-->
+        <activity android:name=".amphibians.MainClassApmhibians"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher_amphibians_playstore"
+            android:label="@string/app_name_amphibians"
+            android:theme="@style/Theme.Amphibians" >
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

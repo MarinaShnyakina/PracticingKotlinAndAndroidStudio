@@ -158,4 +158,7 @@
     <!--    An app for Mars-->
     <string name="app_name_mars">Mars Photos</string>
 
+    <!--    An app for Amphibians-->
+    <string name="app_name_amphibians">Amphibians</string>
+
 </resources>
