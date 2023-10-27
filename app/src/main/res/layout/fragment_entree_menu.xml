@@ -10,7 +10,10 @@
             name="viewModel"
             type="com.example.practicingkotlinandandroidstudio.lunchTray.model.OrderViewModel" />
 
-        <!-- TODO: Add the data binding variable for the EntreeMenuFragment -->
+        <!-- Add the data binding variable for the EntreeMenuFragment -->
+        <variable
+            name="fragmentEntreeMenu"
+            type="com.example.practicingkotlinandandroidstudio.lunchTray.ui.EntreeMenuFragment" />
     </data>
 
 
@@ -33,13 +36,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <!-- TODO: set the entree in the view model when the RadioButton is clicked -->
+                <!-- set the entree in the view model when the RadioButton is clicked -->
                 <RadioButton
                     android:id="@+id/cauliflower"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["cauliflower"].name}'
+                    android:onClick='@{() -> viewModel.setEntree("cauliflower")}'
                     tools:text="Entree 1" />
 
                 <TextView
@@ -63,13 +67,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/cauliflower_description" />
 
-                <!-- TODO: set the entree in the view model when the RadioButton is clicked -->
+                <!-- set the entree in the view model when the RadioButton is clicked -->
                 <RadioButton
                     android:id="@+id/chili"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["chili"].name}'
+                    android:onClick='@{() -> viewModel.setEntree("chili")}'
                     tools:text="Entree 2" />
 
                 <TextView
@@ -93,13 +98,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/chili_description" />
 
-                <!-- TODO: set the entree in the view model when the RadioButton is clicked -->
+                <!-- set the entree in the view model when the RadioButton is clicked -->
                 <RadioButton
                     android:id="@+id/pasta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["pasta"].name}'
+                    android:onClick='@{() -> viewModel.setEntree("pasta")}'
                     tools:text="Entree 3" />
 
                 <TextView
@@ -123,13 +129,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/pasta_description" />
 
-                <!-- TODO: set the entree in the view model when the RadioButton is clicked -->
+                <!-- set the entree in the view model when the RadioButton is clicked -->
                 <RadioButton
                     android:id="@+id/skillet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["skillet"].name}'
+                    android:onClick='@{() -> viewModel.setEntree("skillet")}'
                     tools:text="Entree 4" />
 
                 <TextView
