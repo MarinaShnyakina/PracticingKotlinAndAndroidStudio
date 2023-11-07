@@ -41,7 +41,8 @@ class AccompanimentMenuFragment : Fragment() {
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
-            // TODO: инициализируйте переменные фрагмента меню сопровождения
+            // инициализируйте переменные фрагмента меню сопровождения
+
         }
     }
 
