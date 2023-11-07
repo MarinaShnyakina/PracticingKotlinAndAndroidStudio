@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.lunchTray.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentSideMenuBinding
 
@@ -41,7 +43,8 @@ class SideMenuFragment : Fragment() {
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
-            // TODO: инициализируйте переменные фрагмента бокового меню
+            // инициализируйте переменные фрагмента второго блюда
+            fragmentSideMenu = this@SideMenuFragment
         }
     }
 
@@ -49,15 +52,18 @@ class SideMenuFragment : Fragment() {
      * Перейдите к фрагменту меню "Аккомпанементы"
      */
     fun goToNextScreen() {
-        // TODO: Перейдите к фрагменту меню "Аккомпанементы"
+        // Перейдите к фрагменту меню "Аккомпанементы"
+        findNavController().navigate(R.id.action_sideMenuFragment_to_accompanimentMenuFragment)
     }
 
     /**
      * Отмените заказ и начните все сначала.
      */
     fun cancelOrder() {
-        // TODO: Сбросить порядок в модели просмотра
-        // TODO: Вернитесь к [StartFragment], чтобы начать все сначала
+        // Сбросить порядок в модели просмотра
+        sharedViewModel.resetOrder()
+        // Вернитесь к [StartFragment], чтобы начать все сначала
+        findNavController().navigate(R.id.action_sideMenuFragment_to_startOrderFragment)
     }
 
     /**

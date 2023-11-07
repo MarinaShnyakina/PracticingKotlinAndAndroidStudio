@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentStartOrderBinding
 
 /**
@@ -29,7 +31,8 @@ class StartOrderFragment : Fragment() {
         val root: View = binding.root
         // Перейдите к Entire Menu
         binding.startOrderBtn.setOnClickListener {
-            // TODO: перейдите к Entire Menu Fragment
+            // перейдите к Entire Menu Fragment
+            findNavController().navigate(R.id.action_startOrderFragment_to_entreeMenuFragment)
         }
         return root
     }

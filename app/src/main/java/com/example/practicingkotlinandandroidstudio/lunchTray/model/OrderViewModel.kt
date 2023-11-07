@@ -21,11 +21,11 @@ class OrderViewModel : ViewModel() {
     private val _entree = MutableLiveData<MenuItem?>()
     val entree: LiveData<MenuItem?> = _entree
 
-    // Сторона для заказа
+    // Гарнир для заказа
     private val _side = MutableLiveData<MenuItem?>()
     val side: LiveData<MenuItem?> = _side
 
-    // Сопровождение заказа
+    // Дополнение заказа
     private val _accompaniment = MutableLiveData<MenuItem?>()
     val accompaniment: LiveData<MenuItem?> = _accompaniment
 
@@ -51,68 +51,74 @@ class OrderViewModel : ViewModel() {
      * Укажите основное блюдо для заказа.
      */
     fun setEntree(entree: String) {
-        // TODO: если _entire.value не равно null, установите предыдущую цену основного блюда
-        //  на текущую цену основного блюда.
-
-        // TODO: если _subtotal.value не равно null, вычтите предыдущую цену основного блюда
-        //  из текущего значения промежуточного итога. Это гарантирует, что мы берем плату только за выбранное в данный момент блюдо.
-
-        // TODO: установите текущее значение entree для пункта прейскуранта, соответствующего переданной строке
-        // TODO: обновите промежуточный итог, чтобы отразить цену выбранного основного блюда.
+        _entree.value?.run {
+            previousEntreePrice = price
+        }
+        if (_subtotal.value != null) {
+            _subtotal.value = _subtotal.value!! - previousEntreePrice
+        }
+        _entree.value = menuItems[entree]
+        updateSubtotal(_entree.value!!.price)
     }
 
     /**
-     * Установите сторону для заказа.
+     * Установите гарнир для заказа.
      */
     fun setSide(side: String) {
-        // TODO: если _side.value не равно null, установите предыдущую побочную цену на текущую побочную цену.
-
-        // TODO: если _subtotal.value не равно null, вычтите предыдущую дополнительную цену из текущего значения
-        //  промежуточного итога. Это гарантирует, что мы взимаем плату только за выбранную в данный момент сторону.
-
-        // TODO: установите текущее побочное значение для пункта прейскуранта, соответствующего переданной строке
-        // TODO: обновите промежуточный итог, чтобы отразить цену выбранной стороны.
+        _side.value?.run {
+            previousSidePrice = price
+        }
+        if (_subtotal.value != null) {
+            _subtotal.value = _subtotal.value!! - previousSidePrice
+        }
+        _side.value = menuItems[side]
+        updateSubtotal(_side.value!!.price)
     }
 
     /**
-     * Установите сопровождение для заказа.
+     * Установите дополнение для заказа.
      */
     fun setAccompaniment(accompaniment: String) {
-        // TODO: если _accompaniment.value не равно null, установите предыдущую цену аккомпанемента
-        //  на текущую цену аккомпанемента.
-
-        // TODO: если _accompaniment.value не равно null, вычтите предыдущую цену сопровождения из
-        //  текущего промежуточного итогового значения. Это гарантирует, что мы берем плату только
-        //  за выбранный в данный момент аккомпанемент.
-
-        // TODO: установите текущее значение аккомпанемента в пункт меню, соответствующий переданной строке
-        // TODO: обновите промежуточный итог, чтобы отразить цену выбранного сопровождения.
+        _accompaniment.value?.run {
+            previousAccompanimentPrice = price
+        }
+        if (_subtotal.value != null) {
+            _subtotal.value = _subtotal.value!! - previousAccompanimentPrice
+        }
+        _accompaniment.value = menuItems[accompaniment]
+        updateSubtotal(_accompaniment.value!!.price)
     }
 
     /**
      * Обновите промежуточное итоговое значение.
      */
     private fun updateSubtotal(itemPrice: Double) {
-        // TODO: если _subtotal.value не равно null, обновите его,
-        //  чтобы отразить цену недавно добавленного товара.
-        //  В противном случае установите значение _subtotal.value равным цене товара.
-
-        // TODO: рассчитайте налог и итоговую сумму
+        _subtotal.value = (_subtotal.value ?: 0.0) + itemPrice
+        calculateTaxAndTotal()
     }
 
     /**
      * Рассчитайте налог и обновите итоговую сумму.
      */
     fun calculateTaxAndTotal() {
-        // TODO: установите _tax.value на основе промежуточного итога и налоговой ставки.
-        // TODO: установите итоговую сумму на основе промежуточного итога и _tax.value.
+        val subTotal = _subtotal.value ?: 0.0
+        _tax.value = subTotal * taxRate
+        _total.value = subTotal + _tax.value!!
     }
 
     /**
      * Сбросьте все значения, относящиеся к заказу.
      */
     fun resetOrder() {
-        // TODO: Сбросить все значения, связанные с заказом
+        previousSidePrice = 0.0
+        previousEntreePrice = 0.0
+        previousAccompanimentPrice = 0.0
+        _tax.value = 0.0
+        _total.value = 0.0
+        _subtotal.value = 0.0
+        _side.value = null
+        _accompaniment.value = null
+        _entree.value = null
 
     }
 }

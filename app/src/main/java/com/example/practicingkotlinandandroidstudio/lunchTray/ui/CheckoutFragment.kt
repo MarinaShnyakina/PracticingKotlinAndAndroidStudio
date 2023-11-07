@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.lunchTray.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentCheckoutBinding
@@ -46,7 +47,9 @@ class CheckoutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
-            // TODO: инициализируйте переменные OrderViewModel и Checkout Fragment
+            // инициализируйте переменные OrderViewModel и Checkout Fragment
+            viewModel = sharedViewModel
+            checkoutFragment = this@CheckoutFragment
         }
     }
 
@@ -54,8 +57,10 @@ class CheckoutFragment : Fragment() {
      * Отмените заказ и начните все сначала.
      */
     fun cancelOrder() {
-        // TODO: Сбросить порядок в модели просмотра
-        // TODO: Вернитесь к [StartFragment], чтобы начать все сначала
+        // Сбросить порядок в модели просмотра
+        sharedViewModel.resetOrder()
+        // Вернитесь к [StartFragment], чтобы начать все сначала
+        findNavController().navigate(R.id.action_checkoutFragment_to_startOrderFragment)
     }
 
 /**
@@ -64,8 +69,10 @@ class CheckoutFragment : Fragment() {
 fun submitOrder() {
     // Show snackbar to "confirm" order
     Snackbar.make(binding.root, R.string.submit_order, Snackbar.LENGTH_SHORT).show()
-    // TODO: Сбросить порядок в модели просмотра
-    // TODO: Вернитесь к [StartFragment], чтобы начать все сначала
+    // Сбросить порядок в модели просмотра
+    sharedViewModel.resetOrder()
+    // Вернитесь к [StartFragment], чтобы начать все сначала
+    findNavController().navigate(R.id.action_checkoutFragment_to_startOrderFragment)
 }
 
     /**

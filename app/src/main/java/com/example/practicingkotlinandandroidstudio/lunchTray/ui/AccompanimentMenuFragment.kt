@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.lunchTray.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentAccompanimentMenuBinding
 
@@ -42,7 +44,7 @@ class AccompanimentMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             // инициализируйте переменные фрагмента меню сопровождения
-
+            fragmentAccompanimentMenu = this@AccompanimentMenuFragment
         }
     }
 
@@ -50,15 +52,18 @@ class AccompanimentMenuFragment : Fragment() {
      * Перейдите к фрагменту оформления заказа.
      */
     fun goToNextScreen() {
-        // TODO: Перейдите к фрагменту оформления заказа
+        // Перейдите к фрагменту оформления заказа
+        findNavController().navigate(R.id.action_accompanimentMenuFragment_to_checkoutFragment)
     }
 
     /**
      * Отмените заказ и начните все сначала.
      */
     fun cancelOrder() {
-        // TODO: Сбросить порядок в модели просмотра
-        // TODO: Вернитесь к [StartFragment], чтобы начать все сначала
+        // Сбросить порядок в модели просмотра
+        sharedViewModel.resetOrder()
+        // Вернитесь к [StartFragment], чтобы начать все сначала
+        findNavController().navigate(R.id.action_accompanimentMenuFragment_to_startOrderFragment)
     }
 
     /**

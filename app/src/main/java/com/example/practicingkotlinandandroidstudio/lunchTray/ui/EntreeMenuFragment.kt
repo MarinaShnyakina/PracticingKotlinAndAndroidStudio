@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.lunchTray.model.OrderViewModel
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentEntreeMenuBinding
 
@@ -41,7 +43,8 @@ class EntreeMenuFragment : Fragment() {
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
-            // TODO: инициализируйте переменные всего фрагмента меню
+            // инициализируйте переменные всего фрагмента меню
+            fragmentEntreeMenu = this@EntreeMenuFragment
         }
     }
 
@@ -49,15 +52,18 @@ class EntreeMenuFragment : Fragment() {
      * Перейдите к Side Menu Fragment.
      */
     fun goToNextScreen() {
-        // TODO: Перейдите к Side Menu Fragment
+        // Перейдите к Side Menu Fragment
+        findNavController().navigate(R.id.action_entreeMenuFragment_to_sideMenuFragment)
     }
 
     /**
      * Отмените заказ и начните все сначала.
      */
     fun cancelOrder() {
-        // TODO: Сбросить порядок в модели просмотра
-        // TODO: Вернитесь к [StartFragment], чтобы начать все сначала
+        // Сбросить порядок в модели просмотра
+        sharedViewModel.resetOrder()
+        // Вернитесь к [StartFragment], чтобы начать все сначала
+        findNavController().navigate(R.id.action_entreeMenuFragment_to_startOrderFragment)
     }
 
     /**
