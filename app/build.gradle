@@ -68,6 +68,14 @@ dependencies {
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
+    // Room
+    implementation "androidx.room:room-runtime:2.6.0"
+    implementation 'androidx.room:room-common:2.6.0'
+    kapt "androidx.room:room-compiler:2.6.0"
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:2.6.0"
+
     implementation (platform('org.jetbrains.kotlin:kotlin-bom:1.8.0'))
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:3.12.4'
