@@ -25,4 +25,9 @@
     <dimen name="base_margin">8dp</dimen>
     <dimen name="radio_button_padding">8dp</dimen>
     <dimen name="checkout_item_margin">4dp</dimen>
+
+    <!--    Dimens for the app of Bus schedule-->
+    <!-- Bus stop list items -->
+    <dimen name="bus_stop_item_horizontal_padding">16dp</dimen>
+    <dimen name="bus_stop_item_vertical_padding">8dp</dimen>
 </resources>
