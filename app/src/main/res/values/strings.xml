@@ -103,7 +103,7 @@
         <item quantity="other">%d cupcakes</item>
     </plurals>
 
-    <!--    An app for Cupcake-->
+    <!--    An app for Sports-->
     <string name="app_name_sports">Sports</string>
     <!-- Strings used for fragments for navigation -->
     <string name="list_fragment_label">Sports</string>
@@ -152,9 +152,9 @@
     <string name="title_accompaniment_menu">Accompaniments</string>
     <string name="title_checkout">Checkout</string>
     <string name="start_order">Start Order</string>
-    <string name="subtotal">Subtotal: %s</string>
+    <string name="subtotal">Subtotal lunch: %s</string>
     <string name="tax">Tax: %s</string>
-    <string name="total">Total: %s</string>
+    <string name="total">Total lunch: %s</string>
     <string name="submit_order">Order Submitted!</string>
 
     <!--    An app for Bus Schedule-->

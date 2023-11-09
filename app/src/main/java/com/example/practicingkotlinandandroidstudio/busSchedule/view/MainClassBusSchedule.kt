@@ -1,4 +1,4 @@
-package com.example.practicingkotlinandandroidstudio.busSchedule.assets
+package com.example.practicingkotlinandandroidstudio.busSchedule.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

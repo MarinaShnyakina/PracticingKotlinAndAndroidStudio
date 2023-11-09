@@ -129,6 +129,7 @@
     <item name="singleLine">false</item>
     <item name="android:scrollHorizontally">false</item>
     <item name="maxLines">5</item>
+    </style>
 
     <!-- TextView Style for Checkout Item Label -->
     <style name="Widget.LunchTray.TextView.CheckoutItem.Label"
@@ -167,5 +168,4 @@
         <item name="android:layout_marginTop">@dimen/base_margin</item>
     </style>
 
-    <string name="cancel">Cancel</string>
 </resources>

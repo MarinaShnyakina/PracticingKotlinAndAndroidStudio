@@ -58,10 +58,4 @@
     <color name="purple_500_lunch">#FF6200EE</color>
     <color name="purple_700_lunch">#FF3700B3</color>
 
-    <!--    Colors for the app Bus schedule-->
-    <resources>
-        <color name="purple_500_schedule">#FF6200EE</color>
-        <color name="purple_700_schedule">#FF3700B3</color>
-    </resources>
-
 </resources>
