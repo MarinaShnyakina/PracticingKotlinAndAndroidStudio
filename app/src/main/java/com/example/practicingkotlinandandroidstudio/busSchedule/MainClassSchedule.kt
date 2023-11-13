@@ -8,7 +8,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.practicingkotlinandandroidstudio.R
 import com.example.practicingkotlinandandroidstudio.databinding.ActivityBusscheduleMainBinding
 
-class MainClassBusSchedule : AppCompatActivity() {
+class MainClassSchedule : AppCompatActivity() {
 
     private lateinit var navController: NavController
 
@@ -19,7 +19,7 @@ class MainClassBusSchedule : AppCompatActivity() {
         setContentView(binding.root)
 
         val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+            .findFragmentById(R.id.nav_host_fragment_bus) as NavHostFragment
         navController = navHostFragment.navController
         setupActionBarWithNavController(navController)
     }

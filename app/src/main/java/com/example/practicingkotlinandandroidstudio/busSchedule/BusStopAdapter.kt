@@ -3,12 +3,11 @@ package com.example.practicingkotlinandandroidstudio.busSchedule
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.leanback.widget.DiffCallback
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practicingkotlinandandroidstudio.databinding.BusStopItemBinding
-import com.example.practicingkotlinandandroidstudio.busSchedule.database.Schedule
+import com.example.practicingkotlinandandroidstudio.busSchedule.database.schedule.Schedule
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -28,16 +27,6 @@ class BusStopAdapter(
         }
     }
 
-        class BusStopViewHolder(private var binding: BusStopItemBinding)
-            : RecyclerView.ViewHolder(binding.root) {
-                @SuppressLint("SimpleDateFormat")
-                fun bind(schedule: Schedule) {
-                    binding.stopNameTextView.text = schedule.stopName
-                    binding.arrivalTimeTextView.text = SimpleDateFormat(
-                        "h:mm a").format(Date(schedule.arriveTime.toLong() * 1000))
-                }
-            }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BusStopViewHolder {
         val viewHolder = BusStopViewHolder(
             BusStopItemBinding.inflate(
@@ -55,5 +44,15 @@ class BusStopAdapter(
 
     override fun onBindViewHolder(holder: BusStopViewHolder, position: Int) {
         holder.bind(getItem(position))
+    }
+
+    class BusStopViewHolder(private var binding: BusStopItemBinding)
+        : RecyclerView.ViewHolder(binding.root) {
+        @SuppressLint("SimpleDateFormat")
+        fun bind(schedule: Schedule) {
+            binding.stopNameTextView.text = schedule.stopName
+            binding.arrivalTimeTextView.text = SimpleDateFormat(
+                "h:mm a").format(Date(schedule.arrivalTime.toLong() * 1000))
+        }
     }
 }
