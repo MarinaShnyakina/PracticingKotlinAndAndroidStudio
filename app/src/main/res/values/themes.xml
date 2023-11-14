@@ -155,4 +155,23 @@
     <item name="colorPrimary">@color/purple_500</item>
     <item name="colorPrimaryVariant">@color/purple_700</item>
 </style>
+
+
+    <!--    Theme for the app Inventory-->
+    <!-- Base application theme. -->
+    <style name="Theme.InventoryApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500_inventory</item>
+        <item name="colorPrimaryVariant">@color/purple_700_inventory</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200_inventory</item>
+        <item name="colorSecondaryVariant">@color/teal_700_inventory</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/Widget.Inventory.TextInputLayout.OutlinedBox</item>
+    </style>
+
 </resources>

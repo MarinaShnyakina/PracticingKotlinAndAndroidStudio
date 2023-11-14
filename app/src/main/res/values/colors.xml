@@ -58,4 +58,12 @@
     <color name="purple_500_lunch">#FF6200EE</color>
     <color name="purple_700_lunch">#FF3700B3</color>
 
+    <!--    Colors for the app Inventory-->
+    <color name="purple_200_inventory">#FFBB86FC</color>
+    <color name="purple_500_inventory">#FF6200EE</color>
+    <color name="purple_700_inventory">#FF3700B3</color>
+    <color name="teal_200_inventory">#FF03DAC5</color>
+    <color name="teal_700_inventory">#FF018786</color>
+    <color name="red_700_inventory">#FFD32F2F</color>
+
 </resources>
