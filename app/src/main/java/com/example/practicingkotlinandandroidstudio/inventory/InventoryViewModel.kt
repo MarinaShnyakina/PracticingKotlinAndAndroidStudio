@@ -14,10 +14,7 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
         }
     }
 
-    private fun getNewItemEntry(
-        itemName: String,
-        itemPrice: String,
-        itemCount: String)
+    private fun getNewItemEntry(itemName: String, itemPrice: String, itemCount: String)
     : Item {
         return Item(
             itemName = itemName,
@@ -26,14 +23,18 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
         )
     }
 
-    fun addNewItem(
-        itemName: String,
-        itemPrice: String,
-        itemCount: String,
-    ) {
+    fun addNewItem(itemName: String, itemPrice: String, itemCount: String, ) {
         val newItem = getNewItemEntry(itemName, itemPrice, itemCount)
         insertItem(newItem)
+    }
 
+    // check empty fields
+    fun isEntryValid(itemName: String, itemPrice: String, itemCount: String)
+    : Boolean {
+        if (itemName.isBlank() || itemPrice.isBlank() || itemCount.isBlank()) {
+            return false
+        }
+        return true
     }
 }
 
