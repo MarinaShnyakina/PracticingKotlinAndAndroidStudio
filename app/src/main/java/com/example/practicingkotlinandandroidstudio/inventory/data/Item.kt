@@ -1,6 +1,7 @@
 package com.example.practicingkotlinandandroidstudio.inventory.data
 
 import androidx.room.*
+import java.text.NumberFormat
 
 @Entity(tableName = "item")
 data class Item (
@@ -12,4 +13,7 @@ data class Item (
     val itemPrice: Double,
     @ColumnInfo(name = "quantity")
     val quantityInStock: Int,
-        )
+)
+
+fun Item.getFormattedPrice(): String =
+    NumberFormat.getNumberInstance().format(itemPrice)
