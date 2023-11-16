@@ -2,9 +2,39 @@ package com.example.practicingkotlinandandroidstudio.inventory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
+import com.example.practicingkotlinandandroidstudio.inventory.data.Item
 import com.example.practicingkotlinandandroidstudio.inventory.data.ItemDao
+import kotlinx.coroutines.launch
 
 class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
+    private fun insertItem(item: Item) {
+        viewModelScope.launch {
+            itemDao.insert(item)
+        }
+    }
+
+    private fun getNewItemEntry(
+        itemName: String,
+        itemPrice: String,
+        itemCount: String)
+    : Item {
+        return Item(
+            itemName = itemName,
+            itemPrice = itemPrice.toDouble(),
+            quantityInStock = itemCount.toInt(),
+        )
+    }
+
+    fun addNewItem(
+        itemName: String,
+        itemPrice: String,
+        itemCount: String,
+    ) {
+        val newItem = getNewItemEntry(itemName, itemPrice, itemCount)
+        insertItem(newItem)
+
+    }
 }
 
 // can be reused
