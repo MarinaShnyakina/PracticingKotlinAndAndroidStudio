@@ -22,22 +22,21 @@ class AddItemFragment : Fragment() {
     // can be reused
     private val viewModel: InventoryViewModel by activityViewModels {
         InventoryViewModelFactory(
-            (activity?.application as InventoryApplication).database
-            .itemDao()
+            (activity?.application as InventoryApplication).database.itemDao()
         )
     }
 
     lateinit var item: Item
 
-    private var _binbing: FragmentAddItemBinding? = null
-    private val binding get() = _binbing!!
+    private var _binding: FragmentAddItemBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binbing = FragmentAddItemBinding.inflate(inflater, container, false)
+        _binding = FragmentAddItemBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -76,6 +75,6 @@ class AddItemFragment : Fragment() {
         val inputMethodManager = requireActivity().getSystemService(INPUT_METHOD_SERVICE) as
                 InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(requireActivity().currentFocus?.windowToken, 0)
-        _binbing = null
+        _binding = null
     }
 }
