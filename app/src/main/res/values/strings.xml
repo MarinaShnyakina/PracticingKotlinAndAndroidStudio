@@ -2,4 +2,7 @@
     <string name="app_name">PracticingKotlinAndAndroidStudio</string>
     <string name="happy_birthday">Happy Birthday, Katy!</string>
     <string name="from">From Marina.</string>
+
+<!--    Dev Byte Viewer App-->
+    <string name="app_name_devbyte">DevByte Viewer</string>
 </resources>
