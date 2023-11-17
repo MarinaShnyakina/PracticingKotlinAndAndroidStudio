@@ -62,6 +62,30 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
     fun isStockAvailable(item: Item): Boolean {
         return (item.quantityInStock > 0)
     }
+
+    private fun getUpdateItemEntry(
+        itemId: Int,
+        itemName: String,
+        itemPrice: String,
+        itemCount: String,
+    ): Item {
+        return Item(
+            id = itemId,
+            itemName = itemName,
+            itemPrice = itemPrice.toDouble(),
+            quantityInStock = itemCount.toInt(),
+        )
+    }
+
+    fun updateItem(
+        itemId: Int,
+        itemName: String,
+        itemPrice: String,
+        itemCount: String,
+    ) {
+        val updateItem = getUpdateItemEntry(itemId, itemName, itemPrice, itemCount)
+        updateItem(updateItem)
+    }
 }
 
 // can be reused
