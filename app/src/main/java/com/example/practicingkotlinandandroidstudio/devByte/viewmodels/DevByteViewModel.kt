@@ -35,7 +35,7 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
  *  * A playlist of videos that can be shown on the screen. This is private to avoid exposing a
  * way to set this value to observers.
  */
-    private val _playlist = MutableLiveData<List<DevByteVideo>>()
+    //private val _playlist = MutableLiveData<List<DevByteVideo>>()
 
     /**
      * Event triggered for network error. This is private to avoid exposing a
@@ -83,7 +83,7 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
 
             } catch (networkError: IOException) {
                 // Show a Toast error message and hide the progress bar.
-                if (playlist.value.isNullOrEmpty())
+                if(playlist.value.isNullOrEmpty())
                 _eventNetworkError.value = true
             }
         }
