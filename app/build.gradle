@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk:1.8.22'
 
     // support libraries
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -76,7 +78,7 @@ dependencies {
 
     // arch components
     // ViewModel and LiveData
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
 
     // logging
     implementation 'com.jakewharton.timber:timber:4.7.1'
