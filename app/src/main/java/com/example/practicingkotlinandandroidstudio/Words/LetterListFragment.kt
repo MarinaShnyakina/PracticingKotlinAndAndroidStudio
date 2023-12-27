@@ -5,11 +5,15 @@ import android.os.Bundle
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.practicingkotlinandandroidstudio.R
+import com.example.practicingkotlinandandroidstudio.Words.data.SettingsDataStore
 import com.example.practicingkotlinandandroidstudio.databinding.FragmentLetterListBinding
+import kotlinx.coroutines.launch
 
 
 class LetterListFragment : Fragment() {
@@ -19,6 +23,8 @@ class LetterListFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private var isLinearLayoutManager = true
+
+    private lateinit var layoutDataStore: SettingsDataStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +44,16 @@ class LetterListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         recyclerView = binding.recyclerView
-        chooseLayout()
+
+        layoutDataStore = SettingsDataStore(requireContext())
+
+        layoutDataStore.preferenceFlow.asLiveData().observe(viewLifecycleOwner, {})
+        layoutDataStore.preferenceFlow.asLiveData().observe(viewLifecycleOwner, { value ->
+            isLinearLayoutManager = value
+            chooseLayout()
+
+            activity?.invalidateOptionsMenu()
+        })
     }
 
     override fun onDestroyView() {
@@ -80,6 +95,11 @@ class LetterListFragment : Fragment() {
         return when (item.itemId) {
             R.id.action_switch_layout -> {
                 isLinearLayoutManager = !isLinearLayoutManager
+
+                lifecycleScope.launch {
+                    layoutDataStore.saveLayoutToPreferencesStore(isLinearLayoutManager, requireContext())
+                }
+
                 chooseLayout()
                 setIcon(item)
 
